@@ -1,3 +1,4 @@
   <button class="follow-toggle" type="button" name="button"
   data-user-id="<%=current_user.id%>"
-  data-initial-follow-state="<%= current_user.follows?(user)%>"></button>
+  data-initial-follow-state="<%= current_user.follows?(@user) ?
+  "Click to Unfollow" : "Click to Follow"%>"></button>
